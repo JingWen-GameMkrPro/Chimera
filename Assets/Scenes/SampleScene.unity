@@ -960,13 +960,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8928761027029633503, guid: 91c79cfe26adae64ebbc9e193c9a4401, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928761027029633503, guid: 91c79cfe26adae64ebbc9e193c9a4401, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 28366ae6065b95b409ef00139d1ab503, type: 2}
+    - target: {fileID: 8928761027029633503, guid: 91c79cfe26adae64ebbc9e193c9a4401, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 734ca663ce7740a46895927e3c6aef78, type: 2}
     - target: {fileID: 8963540043044290589, guid: 91c79cfe26adae64ebbc9e193c9a4401, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 9080800743738552630, guid: 91c79cfe26adae64ebbc9e193c9a4401, type: 3}
-      propertyPath: groundDrag
-      value: 5
+    - target: {fileID: 9096320708133929534, guid: 91c79cfe26adae64ebbc9e193c9a4401, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
