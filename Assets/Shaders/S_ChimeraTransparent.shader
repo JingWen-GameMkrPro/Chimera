@@ -1,24 +1,29 @@
-Shader "Custom/S_ChimeraBase_SRP"
+Shader "Custom/S_ChimeraTransparent"
 {
     Properties
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _AlphaScale ("Alpha Scale", Range(0, 1)) = 1
     }
     SubShader
     {
-        // 這裡確保標籤正確
-        Tags { "RenderPipeline" = "RP_Chimera" "RenderType"="Opaque" }
+        Tags {"RenderType"="Transparent" }
         
         Pass
         {
-            // 必須在 Pass 內指定 LightMode
-            Tags { "LightMode" = "RP_Chimera" }
+            Tags { "LightMode" = "RenderPipeline_Chimera_Transparent" }
+
+            ZWrite Off
+
+            Blend SrcAlpha OneMinusSrcAlpha
 
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #include "UnityCG.cginc" // 為了使用 UnityObjectToClipPos
+            #include "UnityCG.cginc"
+
+            float _AlphaScale;
 
             struct appdata
             {
@@ -39,7 +44,6 @@ Shader "Custom/S_ChimeraBase_SRP"
             v2f vert (appdata v)
             {
                 v2f o;
-                // 使用 SRP SetupCameraProperties 傳進來的矩陣進行變換
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv * _MainTex_ST.xy + _MainTex_ST.zw;
                 return o;
@@ -48,6 +52,7 @@ Shader "Custom/S_ChimeraBase_SRP"
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.uv) * _Color;
+                col.a *= _AlphaScale;
                 return col;
             }
             ENDHLSL
