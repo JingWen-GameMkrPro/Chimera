@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3406af8a61a93ad4f8763c41b6447fd8, type: 3}
   m_Name: FeatureMoebius
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   setting:
     renderPassEventPass1: 300
     materialPass1: {fileID: 2100000, guid: 8073250c0248f24428debb3d15ead386, type: 2}
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
   m_Name: RPFigure
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     passTag: RPFigure
     Event: 400
