@@ -35,6 +35,7 @@ Shader "BlendLayer"
                half4 color = LOAD_FRAMEBUFFER_INPUT(0, input.positionCS.xy);
 #else
                half4 color = SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_LinearClamp, uv);
+               color.r = 255;
 #endif
                // Modify the sampled color
                return color;
