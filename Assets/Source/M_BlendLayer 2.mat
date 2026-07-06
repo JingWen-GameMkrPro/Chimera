@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_BlendLayer 2
-  m_Shader: {fileID: 4800000, guid: 1f6fd5e40047afc4fbfc5c85bd26ce57, type: 3}
+  m_Shader: {fileID: 4800000, guid: 1b83c00176a08424e8093918fc254ff9, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []

@@ -68,7 +68,7 @@ MonoBehaviour:
   InspectorSetting:
     CaptureLayerTiming: 0
     PostProcessUiLayerTiming: 600
-    CombineLayerTiming: 699
-    PostProcessUiLayerMaterial: {fileID: 0}
-    CombineLayerMaterial: {fileID: 0}
-    PostProcessCombineLayerMaterial: {fileID: 0}
+    CombineLayerTiming: 1000
+    PostProcessUiLayerMaterial: {fileID: 2100000, guid: d384e06fb0fc80f47b0f0f7178ac9283, type: 2}
+    CombineLayerMaterial: {fileID: 2100000, guid: 1f1aa605b81118b4d8a60548ce40b400, type: 2}
+    PostProcessCombineLayerMaterial: {fileID: 2100000, guid: 7565f29990773354a94595ffa29cb29c, type: 2}
