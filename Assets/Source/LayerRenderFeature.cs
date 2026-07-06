@@ -17,14 +17,9 @@ public class LayerRenderFeature : ScriptableRendererFeature
 
     public class StackLayers : ContextItem
     {
-        // The texture reference variable.
         public Stack<TextureHandle> layers = new();
-
-        // Reset function required by ContextItem. It should reset all variables not carried
-        // over to next frame.
         public override void Reset()
         {
-            // We should always reset texture handles since they are only vaild for the current frame.
             layers.Clear();
         }
     }

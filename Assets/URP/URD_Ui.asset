@@ -1,22 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5261745138093431575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d70cedcd692b9e743829801659c6334e, type: 3}
-  m_Name: LayerRenderFeature
-  m_EditorClassIdentifier: 
-  m_Active: 1
-  push: 0
-  pop: 600
-  blendMaterial: {fileID: 2100000, guid: d384e06fb0fc80f47b0f0f7178ac9283, type: 2}
-  useFBF: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,8 +25,8 @@ MonoBehaviour:
     probeSamplingDebugTexture: {fileID: 0}
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
-  - {fileID: -5261745138093431575}
-  m_RendererFeatureMap: e9644dc1ac86fab6
+  - {fileID: 5124876098278905291}
+  m_RendererFeatureMap: cbd5cd9ba8371f47
   m_UseNativeRenderPass: 0
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -69,3 +52,23 @@ MonoBehaviour:
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &5124876098278905291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bf4c328a1d837e4d8cf6e46a7ee0890, type: 3}
+  m_Name: SRF_BlendLayer
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  InspectorSetting:
+    CaptureLayerTiming: 0
+    PostProcessUiLayerTiming: 600
+    CombineLayerTiming: 699
+    PostProcessUiLayerMaterial: {fileID: 0}
+    CombineLayerMaterial: {fileID: 0}
+    PostProcessCombineLayerMaterial: {fileID: 0}
